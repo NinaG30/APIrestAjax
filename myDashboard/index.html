@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <link href="index.css" rel="stylesheet" />
+    <title>Mon dashboard</title>
+  </head>
+  <body>
+    <h1>Bienvenue sur le Dashboard Admin</h1>
+
+    <div class="flex">
+      <div>
+        <h2 id="ff8">Personnages de FF8</h2>
+        <div class="header">
+          <button id="btnFF8">Les voir</button>
+          <div class="afficheTab" id="getAllFF8"></div>
+        </div>
+        <div class="container1">
+          <h3>1/ Récupérer une data</h3>
+          <div class="bloc">
+            <label for="id">ID de la data</label>
+            <input type="text" id="dataIdFF8" />
+            <button class="btnFF8" id="getByIdFF8-button">Récuperer</button>
+            <div id="afficheFF8"></div>
+          </div>
+        </div>
+        <div class="container1">
+          <h3>2/ Mettre à jour une data</h3>
+          <div class="bloc">
+            <label for="id">ID</label>
+            <input type="text" id="dataIdFF8-update" />
+            <label for="id">Nouveau nom</label>
+            <input type="text" id="dataFF8-new-name" />
+            <button class="btnFF8" id="updateFF8-button">Mettre à jour</button>
+            <p class="result" id="p-updateFF8"></p>
+          </div>
+        </div>
+        <div class="container1">
+          <h3>3/ Supprimer une data</h3>
+          <div class="bloc">
+            <label for="id">ID</label>
+            <input type="text" id="data-deleteFF8" />
+            <button class="btnFF8" id="deleteFF8-button">Supprimer</button>
+            <p class="result" id="p-deleteFF8"></p>
+          </div>
+        </div>
+        <div class="container1">
+          <h3>4/ Créer une data</h3>
+          <div class="bloc">
+            <label for="id">Nom personnage FF8</label>
+            <input type="text" id="createFF8-name" />
+            <button class="btnFF8" id="createFF8-button">Créer</button>
+            <p class="result" id="p-createFF8"></p>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <h2 id="ff8">Personnages de FF10</h2>
+        <div class="header">
+          <button id="btnFF10">Les voir</button>
+          <div class="afficheTab" id="getAllFF10"></div>
+        </div>
+        <div class="container">
+          <h3>1/ Récupérer une data</h3>
+          <div class="bloc">
+            <label for="id">ID de la data</label>
+            <input type="text" id="dataIdFF10" />
+            <button class="btnFF10" id="getByIdFF10-button">Récuperer</button>
+            <div id="afficheFF10"></div>
+          </div>
+        </div>
+        <div class="container">
+          <h3>2/ Mettre à jour une data</h3>
+          <div class="bloc">
+            <label for="id">ID</label>
+            <input type="text" id="dataIdFF10-update" />
+            <label for="id">Nouveau nom</label>
+            <input type="text" id="dataFF10-new-name" />
+            <button class="btnFF10" d="updateFF10-button">Mettre à jour</button>
+            <p class="result" id="p-updateFF10"></p>
+          </div>
+        </div>
+        <div class="container">
+          <h3>3/ Supprimer une data</h3>
+          <div class="bloc">
+            <label for="id">ID</label>
+            <input type="text" id="dataFF10-delete" />
+            <button class="btnFF10" id="deleteFF10-button">Supprimer</button>
+            <p class="result" id="p-deleteFF10"></p>
+          </div>
+        </div>
+        <div class="container">
+          <h3>4/ Créer une data</h3>
+          <div class="bloc">
+            <label for="id">Nom personnage FF10</label>
+            <input type="text" id="createFF10-name" />
+            <button class="btnFF10" id="createFF10-button">Créer</button>
+            <p class="result" id="p-createFF10"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="FF8ajax.js"></script>
+    <script src="FF10ajax.js"></script>
+  </body>
+</html>
