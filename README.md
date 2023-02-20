@@ -1,3 +1,3 @@
 # APIrestAjax
 
-Express + body-parser + nodemon + fs + CORS
+Express nodeJs + body-parser + nodemon + fs + CORS
